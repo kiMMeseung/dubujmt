@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0;
+        margin: 0;}
+   /*타이틀 부붑=ㄴ%*/
+        .tit1e{
+            background-color: #FF5E26;
+            height: 60px;
+            margin-bottom: 60px;
+        }
+        .titleM{ 
+            width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .right-SL{
+         float: right;
+         position: relative;
+         top: 12px;
+        }
+        #search{
+            width: 260px;
+            height: 32px;
+            background-color: rgba(255, 255, 255, 0.226);
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            font-size: 16px;
+            border-radius: 44px;
+            text-align: center;
+        }
+        .login{            
+            margin-right: 160px;
+            font-size: 16px;
+            margin-left: 32px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        input::placeholder {
+        color: rgb(190, 190, 190);
+        }
+   /*네비*/
+        .navi{
+            width: 1080px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 12px;
+        }
+        .navibox-1{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .navibox-1 a{
+            text-decoration: none;
+            color: #FFC1A7;
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 20px;
+        }
+        .navibox-1 a:hover{
+            color: #FF5E26;
+        }
+        .Mainimg{
+            color: rgb(0, 0, 0);
+            width: 1080px;
+            height: 428px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(https://i.postimg.cc/kXYBjJYh/image.jpg);
+            background-position: center top;
+            background-size: 1080px;
+            background-repeat: no-repeat;
+            border: 2px solid #d4d4d4;
+            border-radius: 12px;
+        }
+        h6{font-weight: 500;
+        }
+        h2{ margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 28px;
+        }
+        h5{margin-bottom: 20px;
+            font-weight: 700;}
+        .Mtext{
+            padding-left: 297px;
+            padding-top: 140px;
+            position: relative;
+            transform: translate(0px, 52px);
+        }
+        #Tcolor{color: #FF5E26;}
+        /*navibox2*/
+        .navibox-2 a{
+            color: rgb(173, 173, 173);
+            text-decoration: none;
+        }
+        .navibox-2{margin-bottom: 12px;}
+        .navi1{background-color: #d4d4d4;
+        color: #4e4e4e !important;
+        border-radius: 4px;
+        padding: 4px;
+        font-weight:700;
+        }
+        .navi2{margin-left: 4px;
+        margin-right: 4px;}
+        
+        .navibox-3 a{
+            color: rgb(173, 173, 173);
+            text-decoration: none;
+        }
+        .navibox-3{margin-bottom: 12px;}
+
+        
+        .seachbar-p{
+            margin-top:60px;
+            margin-bottom: 40px;
+            font-size: 24px;
+            font-weight: 900;
+            text-align: center;}
+
+        .searchBarr{
+            margin-top: 16px;
+            margin-bottom: 40px;
+        }
+        #search2{
+            width: 560px;
+            height: 32px;
+            background-color: rgba(255, 255, 255, 0.226);
+            color: #000000;
+            border: 2px solid #1a1a1a96;
+            font-size: 16px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .navibox-3{
+            margin-bottom: 60px;
+        }
+        .Carret{
+        background-color: #FF5E26;
+        text-decoration: none;
+        padding: 9px;
+        color: #FFFFFF;
+        font-size: 16px;
+        }
+        .Carret1{
+            text-decoration: none;
+            padding: 8px;
+            border: 1px solid #FF5E26;;
+            color: #FF5E26;
+            font-size: 16px;
+        }
+        .naviboox{
+            margin-top: 80px;
+            width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .THbox{
+            margin-top: 40px;
+            width: 1180px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .case1{
+            float: left;
+        }
+
+        /*메잉*/
+        .groupimg1{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/6/67/67fc63f1ac0c4e4695d98504d39ddd53_%ED%86%A0%EB%A5%B4%EB%A1%9C%EC%BA%A3.png.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        .groupimg2{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/6/60/60a3c692a1ab449b81054f2666782bf8_%EC%B9%B4%EB%B0%80%EB%B8%94%EB%A6%B0%20%ED%81%AC%EB%A6%AC%EC%B3%90.png.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        .groupimg3{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/e/ec/ec22c80f7aed44228f906709c275f66f_%EC%9B%83%EB%8A%94%20%EB%A9%94%ED%97%AC%ED%8E%9C%EC%B0%A8.png.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        .groupimg4{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/8/8e/8e97dc3e054442429e96d475ab70c3e0_1.png.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        .groupimg5{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/b/bb/bbdd2c23c7b64f35b46f9885084705d3_%ED%99%8D%EB%B3%B4%EC%9A%A9.png.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        .groupimg6{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/b/bd/bd51d97a5f8842fca13788f1ca85ce71_commission16.png.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        .groupimg7{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/7/77/7789f8ff9dba4a77aa05e534a7fa771c_%EA%B3%A0%EC%A0%95%ED%8B%80%20%EC%BB%A4%EB%AF%B8%EC%85%98%20%EC%95%88%EB%82%B4%ED%8E%98%EC%9D%B4%EC%A7%80.png.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        .groupimg8{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/c/c8/c8bf3bdd58b045f483819aaa0d181d01_%EC%BD%9C%EB%A6%AC%20%EC%84%AC%EB%84%A4%EC%9D%BC%20%EB%B2%94%EC%9C%8467.png.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        .groupimg9{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/1/19/199cefd036af491197b9647ffcf294bc_20220605_173115.jpg.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        .groupimg10{
+            width: 197px;
+            height: 197px;
+            background-image: url(https://cdn.ccoli.co/__/cover/portfolio/3/36/367558ae9a87438c8fe8ebf6eea1c931_%EC%8D%B8%EB%84%A4%EC%9D%BC.png.webp);
+            background-size: 197px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+        }
+        /**/
+        #group-1{
+            list-style: none;
+        }
+        .artist-G{
+           display: flex;
+           margin-bottom: 4px;
+        }
+        .Name-artist{
+         margin-top: 8px;
+        }
+        .ddddd a{
+            text-decoration: none;
+            color: #4e4e4e;
+            background-color: #cfcfcf;
+            border-radius: 4px;
+            margin: 4px;
+        }
+        .Comission-N{
+            font-size: 20px;
+            color: #FF5E26;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .case1 a{
+            text-decoration: none;
+            color: #646464;
+        }
+        .case1{margin-right: 16px;}
+        .THbox{
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .next-box{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+     
+        }
+        .nextt{
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .nextt a{
+            text-decoration: none;
+            margin-left: 4px;
+            margin-right: 4px;
+            color: #a7a7a7;}
+        .nextt a:hover{
+            text-decoration: none;
+            margin-left: 4px;
+            margin-right: 4px;
+            color: #4e4e4e;}
+        .footer{
+            text-align: center;
+            margin-top: 100px;
+            background-color: #dbdbdb75;
+        padding: 60px 180px;}
+        .footer-link a{
+            text-decoration: none;
+            color: #454545;
+            margin-right: 16px;
+        }    
+        .footer-link{margin-bottom: 60px;}
+        .footer-content p{ font-size: small;}
+        .search{
+            margin-top: 120px;
+            margin-bottom: 120px;
+            transform: scale(1.3);}
+        .Mtext{
+            position: absolute;
+            margin-left: -120px;
+            transform: scale(1.3);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="tit1e">
+        <div class="titleM">
+            <a  class="img1" href="#">
+                <img style="margin-left: 160px;" src="http://artmug.kr/image/design/logo.png" width="44px" alt="아트머그 로고">
+            </a>
+            <div class="right-SL">
+                <input id="search" type="text" placeholder="키워드, 태그, 커미션주 검색">
+                <a class="login" href="#">로그인</a>    
+            </div>
+        </div>
+    </div>
+    <p style=clear:both;></p>
+    </div>
+    <div class="Mainimg">
+        <div class="Mtext">
+            <a style="text-decoration: none; color: #000000;" href="artist.html">
+            <span id="Tcolor"><h2>그림<br>커미션</h2></span>
+            <h5>점심메뉴 작가</h5>
+            <h6>이것저것 다 그립니다.<br>편하게 문의주세요.</h6>
+            </a>
+        </div>
+    </div>
+    <div class="search">
+        <div class="searchbar">
+            <p class="seachbar-p">어떤 커미션을 찾고 있나요?</p>
+            <div class="navi">
+                <div class="navibox-1">
+                    <a class="navi3" href="#">#글</a>
+                    <a class="navi3" href="#">#그림</a>
+                    <a class="navi3" href="#">#버츄얼・Live2D</a>
+                    <a class="navi3" href="#">#디자인</a>
+                    <a class="navi3" href="#">#영상・음향</a>
+                    <a class="navi3" href="#">#타로</a>
+                </div>
+                <div class="searchBarr">
+                    <input id="search2" type="text" placeholder=" search&middot&middot&middot">
+                </div>
+                
+                <div class="navibox-2">
+                    <a class="navi1" href="#">#LD</a><a class="navi2" href="#">(2930)</a>
+                    <a class="navi1" href="#">#SD</a><a class="navi2" href="#">(3130)</a>
+                    <a class="navi1" href="#">#오마카세</a><a class="navi2" href="#">(1930)</a>
+                    <a class="navi1" href="#">#전신</a><a class="navi2" href="#">(1830)</a>
+                    <a class="navi1" href="#">#영상・음향</a><a class="navi2" href="#">(1630)</a>
+                    <a class="navi1" href="#">#반신</a><a class="navi2" href="#">(730)</a><br>
+                </div>
+                <div class="navibox-3">  
+                    <a class="navi1" href="#">#글</a><a class="navi2" href="#">(630)</a>
+                    <a class="navi1" href="#">#고정틀</a><a class="navi2" href="#">(530)</a>
+                    <a class="navi1" href="#">#흉상</a><a class="navi2" href="#">(529)</a>
+                    <a class="navi1" href="#">#디자인</a><a class="navi2" href="#">(490)</a>
+                    <a class="navi1" href="#">#빠른마감</a><a class="navi2" href="#">(290)</a>
+                    <a class="navi1" href="#">#타로</a><a class="navi2" href="#">(130)</a>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <hr size="2" color="f2f2f2";>
+    <div class="naviboox">
+        <a class="Carret" href="">끌올순</a><a class="Carret1" href="">최신순</a>
+    </div>
+    <div class="THbox">
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg1">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px; border-radius: 44px;" src="https://cdn.ccoli.co/__/thumbnail/user_profile/f/fe/fe7a65daaee347f38385d79ef56fa253_133438606151948304.png.webp" alt="">
+                                 <p class="Name-artist">탈 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">흑백 선화, 낙서</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">#낙서</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg2">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px;" src="https://cdn.ccoli.co/__/thumbnail/user_profile/a/ae/ae183fd53d4b46e5b014bb515f135a3e_adsfadsf.png.webp" alt="">
+                                 <p class="Name-artist">제레미 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">크리쳐 / 인외 커미션</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">#오마카세</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg3">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px; border-radius: 44px" src="https://cdn.ccoli.co/__/thumbnail/user_profile/a/ae/ae183fd53d4b46e5b014bb515f135a3e_adsfadsf.png.webp" alt="">
+                                 <p class="Name-artist">제레미 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">풀컬러 커미션</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">#일러스트</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg4">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px; border-radius:44px; " src="https://cdn.ccoli.co/user_profile/9/90/900242ef6c8b5ed3e3c09616a842e52f_94RGT2vP.jpg" alt="">
+                                 <p class="Name-artist">무명 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">로그 커미션</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">#커뮤로그</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg5">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px; border-radius:44px;" src="https://cdn.ccoli.co/__/thumbnail/user_profile/0/09/09055ae0de684f06bb0afd63937a7e11_8W9s53gi_400x400.jpg.webp" alt="">
+                                 <p class="Name-artist">사장님 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">두주먹 주먹밥</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">#SD</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg6">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px; border-radius: 44px;" src="https://cdn.ccoli.co/user_profile/7/78/78350de1cd06959e132b4a716edd2abb_eUbExJm_.png" alt="">
+                                 <p class="Name-artist">H2O 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">H2O 커미션</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">#오마카세</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg7">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px; border-radius: 44px;" src="https://cdn.ccoli.co/__/thumbnail/user_profile/2/29/29a3ca497c2047baa0e56327cc5ea903_B003017234.jpg.webp" alt="">
+                                 <p class="Name-artist">뇸 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">여름 SD 고정틀</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">#고정틀</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg8">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px; border-radius: 44px;" src="https://cdn.ccoli.co/__/thumbnail/user_profile/0/05/05e4e30f3a1546e99ea472920ca8e34c_rewerwewrerw.png.webp" alt="">
+                                 <p class="Name-artist">맹글 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">맹글(할인) 커미션</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">오마카세</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg9">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px; border-radius: 44px;" src="https://cdn.ccoli.co/user_profile/4/49/49f44e07ad9ba77b6e1518d691c16759_default_profile.png" alt="">
+                                 <p class="Name-artist">예나 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">LD두상</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">#낙서</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+        <div class="case1">
+            <a class="group" href="#">
+                <div class="groupimg10">
+                </div>
+                       <ul id="group-1">
+                         <li>
+                             <div class="artist-G">
+                                 <img style="width: 32px; height: 32px; margin-right: 8px; border-radius: 44px;" src="https://cdn.ccoli.co/user_profile/6/61/61fca85895700c42b805858def249ebe_PXBizaQN.png" alt="">
+                                 <p class="Name-artist">월화 작가</p>
+                             </div>
+                         </li>
+                         <li class="Comission-N">LD간단&풀채색/SD</li>
+                         <li>
+                            <a class="RQ-T1" href="#">#그림</a>&#160;<a class="RQ-T1" href="#">#낙서</a>
+                         </li>
+                     </ul>
+            </a>
+        </div>
+    </div>
+    <p style=clear:both;></p>
+    <div class="next-box">
+        <div class="nextt">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">7</a>
+            <a>···</a>
+            <a href="">227</a>
+        </div> 
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-link">
+                <a href="#">광고상품 안내</a>
+                <a href="#">자주하는 질문</a>
+                <a href="#">문의게시판</a>
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#">개인정보취급방침</a>
+            </div>
+            <p>주소 : 서울시 강남구 논현로 712/대표전화 : 02-877-0408/E-mail : artmug@artmug.kr<br><br>회사명 : ㈜인코웍스대표자 : 안병환사업자등록번호 : 197-88-00622통신판매업신고번호 : 제 2017-서울성북-0096호</p>
+        </div>
+    </div>
+</body>
+</html>
